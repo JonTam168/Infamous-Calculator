@@ -1,15 +1,36 @@
+:root {
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border: solid 2px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.display {
+    display: flex;
+    width: 80%;
+    height: 90px;
+    border: solid 2px;
+    margin-top: 10px;
+
 }
 
 .button-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
+    margin: 10px;
+    padding: 0px;
 }
 
 .right-grid {
@@ -18,10 +39,14 @@
     justify-content: flex-end;
 }
 
-.clear {
-    margin: 10px;
+.other {
+
 }
 
-.delete {
+#clear {
+    margin-top: 10px;
+}
+
+#delete {
     margin: 10px;
 }
