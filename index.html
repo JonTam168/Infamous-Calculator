@@ -3,34 +3,36 @@
     <head>
         <title>Infamous Calculator</title>
         <meta charset="utf-8">
-        <script type="text/javascript" src="calc.js"></script>
+        <script type="text/javascript" src="calc.js" defer></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <div class="container">
-
-            <div class="display"></div>
-                <button id="clear">CLEAR</button>
-                <button id="delete">DELETE</button>
-            <div class="button-grid">
-                <button id="9">9</button>
-                <button id="8">8</button>
-                <button id="7">7</button>
-                <button id="divide">/</button>
-                <button id="6">6</button>
-                <button id="5">5</button>
-                <button id="4">4</button>
-                <button id="add">+</button>
-                <button id="3">3</button>
-                <button id="2">2</button>
-                <button id="1">1</button>
-                <button id="subtract">-</button>
-                <button id="0">0</button>
-                <button id="dot">.</button>
-                <button id="equal">=</button>
-                <button id="multiply">*</button>
+            <div class="display-container">
+                <div data-previous-display class="previous-display"></div>
+                <div data-display class="display"></div>
             </div>
+                <button type="button" class="span-two" data-clear>AC</button>
+                <button type="button" data-delete>DEL</button>
+                <button type="button" data-operation>/</button>
+                <button type="button" data-number>9</button>
+                <button type="button" data-number>8</button>
+                <button type="button" data-number>7</button>
+                <button type="button" data-operation>*</button>
+                <button type="button" data-number>6</button>
+                <button type="button" data-number>5</button>
+                <button type="button" data-number>4</button>
+                <button type="button" data-operation>+</button>
+                <button type="button" data-number>3</button>
+                <button type="button" data-number>2</button>
+                <button type="button" data-number>1</button>
+                <button type="button" data-operation>-</button>
+                <button type="button" data-number>.</button>
+                <button type="button" data-number>0</button>
+                <button type="button" class="span-two" data-equal>=</button>
         </div>
-
     </body>
 </html>
